@@ -2,13 +2,14 @@ package com.ibm.aggregate.api.model;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.Id;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class TransactionDetails {
 
 	@Id
@@ -37,7 +38,9 @@ public class TransactionDetails {
 	private double balance;
 
 	
-	
+	public TransactionDetails(){
+
+	}
 	public TransactionDetails(String _id, String _rev, int customerId, LocalDate valueDate, LocalDate transactionDate,
 			String transactionRemarks, String transactionCategory, double withdrawalAmount, double depositAmount,
 			double balance) {
