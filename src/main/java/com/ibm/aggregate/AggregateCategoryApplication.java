@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@ComponentScan({"com.ibm.aggregate.api.client","com.ibm.aggregate.api.service"})
+@ComponentScan({"com.ibm.aggregate.controller","com.ibm.aggregate.api.config","com.ibm.aggregate.api.client","com.ibm.aggregate.api.service"})
 public class AggregateCategoryApplication {
 
 
@@ -18,8 +18,4 @@ public class AggregateCategoryApplication {
 		SpringApplication.run(AggregateCategoryApplication.class, args);
 	}
 
-	public void invokeService()
-	{
-
-	}
 }
