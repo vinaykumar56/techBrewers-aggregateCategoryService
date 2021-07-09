@@ -22,7 +22,7 @@ env:
   IMAGE_NAME: techBrewers-aggregate-category-service
   IKS_CLUSTER: c3dmqlcd0udnvmq5ugpg
   DEPLOYMENT_NAME: techBrewers-aggregate-category-service
-  PORT: 5001
+  PORT: 8083
 
 jobs:
   setup-build-publish-deploy:
