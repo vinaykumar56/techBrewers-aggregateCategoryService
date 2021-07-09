@@ -19,9 +19,9 @@ env:
   IBM_CLOUD_REGION: us-south
   ICR_NAMESPACE: ${{ secrets.ICR_NAMESPACE }}
   REGISTRY_HOSTNAME: us.icr.io
-  IMAGE_NAME: techBrewers-aggregate-category-service
+  IMAGE_NAME: techbrewers-aggregate-category-service
   IKS_CLUSTER: c3dmqlcd0udnvmq5ugpg
-  DEPLOYMENT_NAME: techBrewers-aggregate-category-service
+  DEPLOYMENT_NAME: techbrewers-aggregate-category-service
   PORT: 8083
 
 jobs:
